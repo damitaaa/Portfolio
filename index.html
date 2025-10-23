@@ -85,43 +85,64 @@
     <br><br><br>
 
     <!-- Projects -->
-    <h1 id="projects" class="fw-bold text-center">Projects</h1>
-    <div class="row">
+<h1 id="projects" class="fw-bold text-center">Projects</h1>
+<div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+  <div class="carousel-inner">
 
-      <!-- Project 1 -->
-      <div class="col-md-4"> 
-        <div class="card mb-4 shadow-lg animate__animated animate__fadeInUp"> 
-          <img src="images/project1ss.JPG" class="card-img-top" alt="Front End Web Development"> 
-          <div class="card-body"> <h5 class="card-title">Front End Web Development</h5> 
-            <a href="project1.html" target="_blank" class="btn btn-outline-primary w-100 py-2 rounded-pill">Read More</a> 
-          </div> 
-        </div> 
-      </div>
-
-      <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
-          <img src="images/project2.jpg" class="card-img-top" alt="Group Software Project">
-          <div class="card-body">
-            <h5 class="card-title">Group Software Project</h5>
-            <p class="card-text">Collaborative software development project using Java and Agile methodologies.</p>
-            <button class="btn btn-outline-primary w-100 py-2 rounded-pill">Read More</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-lg animate__animated animate__fadeInUp animate__delay-2s">
-          <img src="images/project3.jpg" class="card-img-top" alt="Solo Software Project">
-          <div class="card-body">
-            <h5 class="card-title">Solo Software Project</h5>
-            <p class="card-text">Personal programming project focused on user interaction and data management.</p>
-            <button class="btn btn-outline-primary w-100 py-2 rounded-pill">Read More</button>
-          </div>
+    <!-- Project 1 -->
+    <div class="carousel-item active">
+      <div class="card mx-auto" style="width: 18rem;">
+        <img src="images/project1ss.JPG" class="card-img-top" alt="Front End Web Development">
+        <div class="card-body text-center">
+          <h5 class="card-title">Front End Web Development</h5>
+          <a href="project1.html" target="_blank" class="btn btn-outline-primary w-100 py-2 rounded-pill">Read More</a>
         </div>
       </div>
     </div>
+
+    <!-- Project 2 -->
+    <div class="carousel-item">
+      <div class="card mx-auto" style="width: 18rem;">
+        <img src="images/project2.jpg" class="card-img-top" alt="Group Software Project">
+        <div class="card-body text-center">
+          <h5 class="card-title">Group Software Project</h5>
+          <p class="card-text">Collaborative software development project using Java and Agile methodologies.</p>
+          <button class="btn btn-outline-primary w-100 py-2 rounded-pill">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="carousel-item">
+      <div class="card mx-auto" style="width: 18rem;">
+        <img src="images/project3.jpg" class="card-img-top" alt="Solo Software Project">
+        <div class="card-body text-center">
+          <h5 class="card-title">Solo Software Project</h5>
+          <p class="card-text">Personal programming project focused on user interaction and data management.</p>
+          <button class="btn btn-outline-primary w-100 py-2 rounded-pill">Read More</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  <!-- Carousel indicators -->
+  <div class="carousel-indicators mt-3">
+    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Project 1"></button>
+    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Project 2"></button>
+    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Project 3"></button>
+  </div>
+</div>
 
     <br><br><br>
 
